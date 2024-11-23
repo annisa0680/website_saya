@@ -1,0 +1,427 @@
+:root {
+    --color-mint: #161816;
+    --color-soft-pink: #c3d2f3;
+    --color-gold: #33effd;
+    --color-primary: #02161f;
+    --color-muted: #6185d4; 
+    --font-sans: 'Poppins', sans-serif;
+    --font-cursive: 'Kaushan Script', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--color-primary);
+    background: var(--color-primary);
+    min-height: 100vh;
+}
+.hero-content .social-icons {
+    margin-top: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #33effd;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.about {
+    display: flex;
+    justify-content: center; /* Memusatkan kontainer secara horizontal */
+    align-items: center; /* Memusatkan kontainer secara vertikal jika dibutuhkan */
+    text-align: center; /* Menjadikan teks dalam kontainer berada di tengah */
+    padding: 40px 20px;
+}
+
+.about .container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    align-items: center; /* Memusatkan elemen di tengah kontainer */
+}
+
+.section-title {
+    font-size: 3rem; /* Memperbesar ukuran font */
+    margin-bottom: 20px;
+    font-weight: bold; /* Menambahkan ketebalan agar lebih mencolok (opsional) */
+    color: #ffffff; /* Menyesuaikan warna teks (opsional) */
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.about .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #afc5f4;
+    border-radius: 5px;
+    color: #afc5f4;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about .btn:hover {
+    background-color: #afc5f4;
+    color: #fff;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #33effd;
+
+}
+
+.hero {
+    padding: 120px 0 80px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.title {
+    font-family: var(--font-cursive);
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: (--font-cursive);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #afc5f4;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-muted);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+    padding: 3px;
+}
+
+.hero-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+}
+
+
+.about, .portfolio, .contact {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-family: var(--font-cursive);
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.see-all {
+    color: var(--color-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-content {
+    opacity: 1;
+}
+
+.myskill-header{
+    margin-top: 70px;
+}
+
+.skill-image {
+    width: 80px; /* Ukuran lingkaran kecil */
+    height: 80px; /* Ukuran lingkaran kecil */
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
+}
+.skill-label {
+    margin-top: 10px; /* Jarak antara lingkaran dan teks */
+    font-size: 14px; /* Ukuran font */
+    color: #ffffff; /* Warna teks */
+    text-align: center;
+}
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ukuran kolom lebih kecil */
+    gap: 5px; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+}
+
+.skill-item {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Tata letak vertikal (gambar di atas, teks di bawah) */
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ukuran lingkaran */
+    height: 100px; /* Ukuran lingkaran */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 10px auto; /* Rata tengah */
+}
+.skill-item:hover {
+    transform: translateY(-5px); /* Animasi hover lebih ringan */
+}
+
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.contact-content {
+    flex: 1;
+}
+
+.contact-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.container.my-5 {
+    padding: 40px;
+    background-color: #f9f9f9; /* Latar belakang terang */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.swal2-confrim {
+    background-color: #3085d6 !important;
+}
+
+.swal2-cancel {
+    background-color: #d33 !important;
+}
+
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .statistics .container {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        margin-bottom: 30px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+    }
+
+    .contact-vertical {
+        writing-mode: horizontal-tb;
+        transform: none;
+        margin-bottom: 20px;
+    }
+}
+
